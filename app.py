@@ -1,2 +1,5 @@
 def is_odd(number):
-    return number % 3 == 0
+    print(
+        f"the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog"
+    )
+    return number % 2 == 0
