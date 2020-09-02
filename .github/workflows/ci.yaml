@@ -2,7 +2,7 @@ name: Code Quality Checker
 on: [push, pull_request]
 
 jobs:
-  quality_checker:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
