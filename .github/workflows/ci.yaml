@@ -1,4 +1,4 @@
-name: Code Quality Checker
+name: Continuous Integration
 on: [pull_request]
 
 jobs:
