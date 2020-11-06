@@ -1,12 +1,13 @@
-name: Code Quality Checker
-on: [push, pull_request]
+name: Continuous Integration
+on: [pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: [3.8]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.8.0, 3.8.6]
 
     steps:
       - uses: actions/checkout@v2
